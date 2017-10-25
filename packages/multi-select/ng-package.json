@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "src": ".",
+  "dest": "dist",
+  "workingDirectory": ".ng_build",
+  "lib": {
+    "entryFile": "public_api.ts",
+    "flatModuleFile": "index",
+    "externals": {
+      "lodash-es/pull": "pull",
+      "lodash-es/without": "without",
+      "lodash-es/isEqual": "isEqual",
+      "lodash-es/unionWith": "unionWith",
+      "lodash-es/dropRight": "dropRight",
+      "lodash-es/xorWith": "xorWith"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@sembilan/multi-select",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "ng-packagr"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.4.6",
+    "@angular/core": "^4.4.6",
+    "@angular/forms": "^4.4.6",
+    "lodash-es": "^4.17.4"
+  },
+  "devDependencies": {
+    "@angular/common": "^4.4.6",
+    "@angular/core": "^4.4.6",
+    "@angular/forms": "^4.4.6",
+    "@types/lodash-es": "^4.17.0",
+    "lodash-es": "^4.17.4",
+    "ng-packagr": "1.4.1"
+  },
+  "dependencies": {}
+}

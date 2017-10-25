@@ -1,0 +1,12 @@
+$multi-select-border-radius: $input-border-radius !default;
+$multi-select-border-width: $border-width !default;
+$multi-select-box-shadow: $input-box-shadow !default;
+$multi-select-border-color: rgba($black, .15) !default;
+$multi-select-input-padding-y: $input-btn-padding-y !default;
+$multi-select-input-padding-x: $input-btn-padding-x !default;
+$multi-select-selection-padding-y: .25rem !default;
+$multi-select-selection-padding-x: .4rem !default;
+$multi-select-focus-border-color: lighten(theme-color("primary"), 25%) !default;
+$multi-select-focus-width: $input-btn-focus-width !default;
+$multi-select-focus-color: $input-btn-focus-color !default;
+$multi-select-focus-box-shadow: 0 0 0 $multi-select-focus-width $multi-select-focus-color !default;

@@ -1,0 +1,110 @@
+n9-multi-select {
+
+  &.ng-valid.ng-dirty {
+    .n9-container {
+      border-color: theme-color('success');
+
+      &.focus {
+        box-shadow: 0 0 0 .2rem rgba(theme-color('success'), .25);
+      }
+    }
+  }
+
+  &.ng-invalid.ng-dirty {
+    .n9-container {
+      border-color: theme-color('danger');
+
+      &.focus {
+        box-shadow: 0 0 0 .2rem rgba(theme-color('danger'), .25);
+      }
+    }
+  }
+
+  .n9-container {
+    border: $multi-select-border-width solid $multi-select-border-color;
+    background: $input-bg none;
+
+    @include border-radius($multi-select-border-radius);
+    @include box-shadow($multi-select-box-shadow);
+    @include transition($input-transition);
+
+    &.focus {
+      border-color: $multi-select-focus-border-color;
+      outline: none;
+
+      @if $enable-shadows {
+        box-shadow: $multi-select-box-shadow, $multi-select-focus-box-shadow;
+      } @else {
+        box-shadow: $multi-select-focus-box-shadow;
+      }
+    }
+  }
+
+  .n9-selection-list {
+    padding: $multi-select-input-padding-y $multi-select-input-padding-x;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 98%;
+
+    > * {
+      margin-right: .2rem;
+      margin-top: .1rem;
+      margin-bottom: .1rem;
+    }
+
+    > input {
+      border: none;
+      outline: none;
+      font-size: inherit;
+      line-height: $input-btn-line-height;
+      color: $input-color;
+      background: $input-bg none;
+      background-clip: padding-box;
+      flex: 1;
+
+      &::placeholder {
+        color: $input-placeholder-color;
+        // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+        opacity: 1;
+      }
+    }
+
+  }
+
+  .n9-selection-item {
+    border: $multi-select-border-width solid $multi-select-border-color;
+    padding: $multi-select-selection-padding-y $multi-select-selection-padding-x;
+
+    @include border-radius($multi-select-border-radius);
+  }
+
+  .n9-option-list {
+    @extend .dropdown-menu;
+    display: block;
+    left: auto;
+    max-height: 11rem;
+    overflow-y: scroll;
+
+  }
+
+  .n9-option-item {
+    @extend .dropdown-item;
+    cursor: pointer;
+  }
+
+  .n9-clear-selection {
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 1.5rem;
+  }
+
+  .n9-remove-selection {
+    cursor: pointer;
+    margin-right: .2rem;
+  }
+
+}
+
+
