@@ -1,6 +1,6 @@
 {
   "name": "@sembilan/multi-select",
-  "version": "1.0.0",
+  "version": "0.0.1-0",
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -19,6 +19,5 @@
     "@types/lodash-es": "^4.17.0",
     "lodash-es": "^4.17.4",
     "ng-packagr": "1.4.1"
-  },
-  "dependencies": {}
+  }
 }

@@ -1,14 +1,12 @@
 {
   "name": "@sembilan/bootstrap-theme",
-  "version": "1.0.0",
+  "version": "0.0.1-0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "node-sass sass/sembilan.scss --importer=node_modules/node-sass-tilde-importer --output=dist --output-style=compact",
     "clean": "rimraf build"
   },
-  "peerDependencies": {},
-  "dependencies": {},
   "devDependencies": {
     "bootstrap": "^4.0.0-beta",
     "node-sass": "^4.5.3",
