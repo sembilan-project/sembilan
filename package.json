@@ -9,8 +9,8 @@
     "@angular/core": "^4.4.6",
     "@angular/language-service": "^4.4.6",
     "codelyzer": "^3.2.2",
-    "lerna": "^2.4.0",
     "rxjs": "^5.5.1",
-    "tslint": "^5.8.0"
+    "tslint": "^5.8.0",
+    "typescript": "^2.5.3"
   }
 }
