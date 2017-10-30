@@ -4,7 +4,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "ng-packagr"
+    "build": "ng-packagr",
+    "clean": "rimraf .ng_build dist"
   },
   "peerDependencies": {
     "@angular/common": "^4.4.6",
@@ -18,6 +19,7 @@
     "@angular/forms": "^4.4.6",
     "@types/lodash-es": "^4.17.0",
     "lodash-es": "^4.17.4",
-    "ng-packagr": "1.4.1"
+    "ng-packagr": "1.4.1",
+    "rimraf": "^2.6.2"
   }
 }

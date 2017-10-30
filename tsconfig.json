@@ -9,6 +9,8 @@
     "skipLibCheck": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "typeRoots": [
       "node_modules/@types"
     ],
