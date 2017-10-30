@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "node-sass sass/sembilan.scss --importer=node_modules/node-sass-tilde-importer --output=dist --output-style=compact",
-    "clean": "rimraf build"
+    "build": "yarn compile && rsync -ar --exclude=node_modules --exclude=*.iml --exclude=yarn.lock --exclude=*.log . ../../dist/bootstrap-theme",
+    "compile": "node-sass sass/sembilan.scss --importer=node_modules/node-sass-tilde-importer --output=dist --output-style=compact",
+    "clean": "rimraf dist"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-beta",

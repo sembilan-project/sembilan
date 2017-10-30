@@ -5,7 +5,7 @@
   "private": false,
   "scripts": {
     "build": "ng-packagr",
-    "clean": "rimraf .ng_build dist"
+    "clean": "rimraf .ng_build"
   },
   "peerDependencies": {
     "@angular/common": "^4.4.6",

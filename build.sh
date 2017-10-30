@@ -29,7 +29,7 @@ scripts() {
     pushd $3 > /dev/null;
     packageName=$(jsonExtractValue './package.json' 'name');
     echo "=== $2 ${packageName}"
-    yarn $1 > /dev/null || true;
+    yarn $1 > /dev/null 2>&1 || true;
     for package in packages/* ; do
         if [[ -d "$(pwd)/${package}" && -f "$(pwd)/${package}/package.json" ]]; then
             scripts $1 $2 "$(pwd)/${package}"

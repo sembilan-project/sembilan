@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "echo 'Building sembilan'"
+    "build": "mkdir dist"
   },
   "devDependencies": {
     "@angular/compiler": "^4.4.6",
