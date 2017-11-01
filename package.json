@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "hishammuddin-sani <mohd.hishammuddin.abd.sani@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "clean": "rimraf dist",
     "build": "mkdir dist"
