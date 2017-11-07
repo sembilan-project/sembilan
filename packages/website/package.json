@@ -21,7 +21,11 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@sembilan/bootstrap-theme": "^1.0.0",
+    "@sembilan/multi-select": "^1.0.0",
+    "bootstrap": "^4.0.0-beta.2",
     "core-js": "^2.4.1",
+    "lodash-es": "^4.17.4",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
