@@ -121,7 +121,7 @@ maintained libraries used by this software which have their own
 licenses; we recommend you read them, as their terms may differ from the
 terms above.
 
-@sembilan/multi-select@1.0.0
+@sembilan/multi-select@1.0.1
 MIT
 MIT
 
