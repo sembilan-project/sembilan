@@ -1,20 +1,111 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container">
+    <a class="navbar-brand">
+      <img src="/assets/sembilan-logo-32x32.png" width="32" height="32">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img class="text-center" src="/assets/sembilan-logo-512x512.png" width="512" height="512">
+      </div>
+      <div class="col">
+        <h1 style="font-size: 5rem" class="text-danger">Sembilan</h1>
+        <p class="lead">
+          Sembilan is a collection of components/directives for Angular framework.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+      <nav class="nav flex-column">
+        <a class="nav-link active">Multi-select</a>
+      </nav>
+    </div>
+    <div class="col-10">
+      <h1 class="d-inline-block">Multi-Select Component</h1>
+      <span class="badge badge-pill badge-primary">Component</span>
+      <table class="table">
+        <tr>
+          <th scope="row">npm Package</th>
+          <td>
+            <a href="https://www.npmjs.com/package/@sembilan/multi-select">
+              <code>@sembilan/multi-select</code>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Peer Dependencies</th>
+          <td>
+            <a href="https://www.npmjs.com/package/lodash-es">
+              <code>lodash-es</code>
+            </a>
+            <br>
+            <a href="https://www.npmjs.com/package/bootstrap">
+              <code>bootstrap@next</code>
+            </a>
+            <br>
+            <a href="https://www.npmjs.com/package/@sembilan/bootstrap-theme">
+              <code>@sembilan/bootstrap-theme</code>
+            </a>
+          </td>
+        </tr>
+      </table>
+      <h2>Description</h2>
+      <p>
+        Multi-Select Component show list of options and enable user to select multiple values. Should be used with
+        <code>ngModel</code>.
+      </p>
+      <h2>Inputs</h2>
+      <article>
+        <h3 class="d-inline-block">placeholder</h3>
+        <span class="badge badge-pill badge-info">string</span>
+        <span><strong>(default: "")</strong></span>
+        <p>
+          Shown in input as a hint. Hide when there's value selected.
+        </p>
+      </article>
+      <article>
+        <h3 class="d-inline-block">options</h3>
+        <span class="badge badge-pill badge-info">array</span>
+        <span><strong>(default: [])</strong></span>
+        <p>
+          List of option selectable by user.
+        </p>
+      </article>
+      <article>
+        <h3 class="d-inline-block">comparator</h3>
+        <span class="badge badge-pill badge-info">function</span>
+        <span><strong>(default: (a1: string, a2: T) => a1 === a2)</strong></span>
+        <p>
+          Custom comparator for comparing user written value with options. Accept function which accept first argument
+          as string and second argument as object. Should return a boolean.
+        </p>
+      </article>
+      <h2>Example</h2>
+      <div class="card card-body bg-light text-left">
+        <n9-multi-select class="mb-2"
+                         [options]="attributes"
+                         [(ngModel)]="values"
+                         required></n9-multi-select>
+        <div class="card">
+          <div class="card-body">
+            Current value: {{ values | json }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

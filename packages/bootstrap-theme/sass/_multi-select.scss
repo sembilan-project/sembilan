@@ -21,6 +21,7 @@ n9-multi-select {
   }
 
   .n9-container {
+    position: relative;
     border: $multi-select-border-width solid $multi-select-border-color;
     background: $input-bg none;
 
@@ -80,12 +81,25 @@ n9-multi-select {
   }
 
   .n9-option-list {
-    @extend .dropdown-menu;
-    display: block;
+    position: absolute;
     left: auto;
+    z-index: $zindex-dropdown;
+    display: block;
+    float: left;
     max-height: 11rem;
     overflow-y: scroll;
-
+    min-width: $dropdown-min-width;
+    padding: $dropdown-padding-y 0;
+    margin: $dropdown-spacer 0 0; // override default ul
+    font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+    color: $body-color;
+    text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+    list-style: none;
+    background-color: $dropdown-bg;
+    background-clip: padding-box;
+    border: $dropdown-border-width solid $dropdown-border-color;
+    @include border-radius($border-radius);
+    @include box-shadow($dropdown-box-shadow);
   }
 
   .n9-option-item {
@@ -97,7 +111,7 @@ n9-multi-select {
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    right: 1.5rem;
+    right: 10px;
   }
 
   .n9-remove-selection {
