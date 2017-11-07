@@ -77,7 +77,7 @@ clean() {
 }
 
 publish() {
-    scripts 'publish --new-version 1.0.0 --access public' 'Publishing' 'dist' $1;
+    scripts 'publish --new-version 1.0.1 --access public' 'Publishing' 'dist' $1;
 }
 
 for ARG in "$@"; do
