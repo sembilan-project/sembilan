@@ -4,6 +4,11 @@
   "private": false,
   "main": "index.js",
   "license": "MIT",
+  "keywords": [
+    "angular",
+    "sembilan",
+    "bootstrap"
+  ],
   "scripts": {
     "build": "yarn compile && rsync -ar --exclude=node_modules --exclude=*.iml --exclude=yarn.lock --exclude=*.log . ../../dist/bootstrap-theme",
     "compile": "node-sass sass/sembilan.scss --importer=node_modules/node-sass-tilde-importer --output=dist --output-style=compact",

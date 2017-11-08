@@ -3,6 +3,13 @@
   "version": "1.0.1",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "angular",
+    "sembilan",
+    "typescript",
+    "multi-select",
+    "bootstrap"
+  ],
   "scripts": {
     "build": "ng-packagr",
     "clean": "rimraf .ng_build"
